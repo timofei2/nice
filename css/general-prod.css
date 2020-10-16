@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+
+/* mobile + tablet */
+@media screen and (max-width:940px) {
+    .desktop{display:none!important;}
+
+	.scrollbox{overflow:auto;overflow:-moz-scrollbars-none!important;}
+	.scrollbox::-webkit-scrollbar{display:none;}
+
+	.container-product {
+		flex-direction: column;
+	}
+
+	.left-side-product {
+        height: 450px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid;
+    }
+    
+    .name-product {
+        margin-bottom: 50px;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+    .right-side-product {
+        width: 100%;
+        padding: 0px 20px;
+        padding-top: 50px;
+    }
+
+    .right-side-product::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width:461px) {
+    .products {
+        padding-top: 40px;
+    }
+
+    .name-product {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .block {
+        margin-bottom: 40px;
+    }
+
+    .block, .block2 {
+        width: 100%;
+    }
+
+    .title-footer {
+        margin-bottom: 20px;
+    }
+
+    .item-title-footer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .modal {
+        padding: 40px;
+        margin-top: 0;
+    }
+
+    .form-flex {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .form-flex form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-form {
+        margin-left: 0;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .wrap-prod-title-modal {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .title-modal {
+        text-align: center;
+    }
+
+    .wrap-specifications-prod {
+        margin-bottom: 30px;
+    }
+
+    .product-modal {
+        margin-right: 0;
+    }
+}
+
+/* desktop */    
+@media screen and (min-width:941px){
+
+    .mobile{display:none!important;}
+}
